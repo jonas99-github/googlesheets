@@ -6,7 +6,6 @@
 </head>
 <body>
 <div class="navbar">
-
 <h4 style="color:white;">Nav</h4>
 
 
@@ -16,7 +15,7 @@
 </div>
 
 <?php 
-$range ="test!A2:J24";
+$range ="test!A2:C24";
 $response = $service ->spreadsheets_values->get($spreadsheetId, $range);
 $values = $response->getValues(); 
 ?>
@@ -42,26 +41,28 @@ if(empty($values)) {
     print "No data found .\n";
 } else {
     //$mask = "%10s %-10s %s";
-
+    $i = 0;
+    while($i<count($values)){
+        echo "
+        <tr style='text-align:center;'>
+        <td><button class='btn btn-primary'>Update</button><button class='btn btn-danger'>Delete</button></td>
+        <td>" . $values[$i] ?? 'default' . "</td>
+       $i++;
+        </tr>";
+        }
+    }
+    /*
     foreach ($values as $row){
-    //echo $row[2] ?? 'default';
         echo "
         <tr style='text-align:center;'>
         <td><button class='btn btn-primary'>Update</button><button class='btn btn-danger'>Delete</button></td>
         <td>" . $row[0] ?? 'default' . "</td>
         <td>" . $row[1] ?? 'default' . "</td>
         <td>" . $row[2] ?? 'default' . "</td>
-        <td>" . $row[3] ?? 'default' . "</td>
-        <td>" . $row[4] ?? 'default' . "</td>
-        <td>" . $row[5] ?? 'default' . "</td>
-        <td>" . $row[6] ?? 'default' . "</td>
-        <td>" . $row[7] ?? 'default' . "</td>
-        <td>" . $row[8] ?? 'default' . "</td>
-        <td>" . $row[9] ?? 'default' . "</td>
-        <td>" . $row[10] ?? 'default' . "</td></tr>";
+        </tr>";
         }
-        
-}
+    */
+
 ?>
 </table>
 </body>
