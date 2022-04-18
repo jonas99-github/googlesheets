@@ -60,7 +60,6 @@ if(empty($values)) {
         <td>" . $row[9] ?? 'default' . "</td>
         <td>" . $row[10] ?? 'default' . "</td></tr>";
         }
-        
 }
 ?>
 </table>
