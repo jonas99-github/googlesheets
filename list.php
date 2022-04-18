@@ -1,0 +1,9 @@
+        <td>" . $row[2] ?: 'default' . "</td>
+        <td>" . $row[3] ?: 'default' . "</td>
+        <td>" . $row[4] ?: 'default' . "</td>
+        <td>" . $row[5] ?: 'default' . "</td>
+        <td>" . $row[6] ?: 'default' . "</td>
+        <td>" . $row[7] ?: 'default' . "</td>
+        <td>" . $row[8] ?: 'default' . "</td>
+        <td>" . $row[9] ?: 'default' . "</td>
+        <td>" . $row[10] ?: 'default' . "</td>
