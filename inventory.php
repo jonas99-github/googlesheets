@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head><title>Inventory</title>
+<head><title></title>
 <?php include "head.php";
       include "sheets.php";
 ?>
@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="navbar">
-<h4 style="color:white;">Gemotech Inc.</h4>
+<h4 style="color:white;">Nav</h4>
 
 
 <!--<input type="text" name="search" id="search">
@@ -42,24 +42,12 @@ if(empty($values)) {
     print "No data found .\n";
 } else {
     //$mask = "%10s %-10s %s";
-    //$i = 0;
-    /*
-    while($i<count($values)){
-        echo "
-        <tr style='text-align:center;'>
-        <td><button class='btn btn-primary'>Update</button><button class='btn btn-danger'>Delete</button></td>
-        <td>" . $values[$i] ?? 'default' . "</td>
-       $i++;
-        </tr>";
-        }
-    }
-    */
-    
+
     foreach ($values as $col){
 $res0=$col[0] ?? "";
 $res1=$col[1] ?? "";
 $res2=$col[2] ?? "";
-$res3=$col[3] ?? "default";
+$res3=$col[3] ?? "";
 $res4=$col[4] ?? "";
 $res5=$col[5] ?? "";
 $res6=$col[6] ?? "";
@@ -84,11 +72,9 @@ $res9=$col[9] ?? "";
         <td>" . $res9  . "</td>
         </tr>";
         }
-    
+        
     }
 ?>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
