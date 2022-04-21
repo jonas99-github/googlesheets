@@ -55,7 +55,6 @@ $res7=$col[7] ?? "";
 $res8=$col[8] ?? "";
 $res9=$col[9] ?? "";
 
-
         echo "<tr style='text-align:center;'>
         <td><button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#staticBackdrop'>Update</button>
         <button class='btn btn-danger'>Delete</button></td>
