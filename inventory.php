@@ -59,17 +59,16 @@ if(empty($values)) {
     */
     
     foreach ($values as $col){
-$res0=$col[0] ?? "";
-$res1=$col[1] ?? "";
-$res2=$col[2] ?? "";
-$res3=$col[3] ?? "default";
-$res4=$col[4] ?? "";
-$res5=$col[5] ?? "";
-$res6=$col[6] ?? "";
-$res7=$col[7] ?? "";
-$res8=$col[8] ?? "";
-$res9=$col[9] ?? "";
-
+      $res0=$col[0] ?? "";
+      $res1=$col[1] ?? "";
+      $res2=$col[2] ?? "";
+      $res3=$col[3] ?? "";
+      $res4=$col[4] ?? "";
+      $res5=$col[5] ?? "";
+      $res6=$col[6] ?? "";
+      $res7=$col[7] ?? "";
+      $res8=$col[8] ?? "";
+      $res9=$col[9] ?? "";
 
         echo "<tr style='text-align:center;'>
         <td><button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#staticBackdrop'>Update</button>
@@ -89,7 +88,6 @@ $res9=$col[9] ?? "";
         }
     
     }
->>>>>>> ff087895b618e257a8804ec4488d5ebcb2fe131e
 ?>
 
 
