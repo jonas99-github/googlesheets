@@ -8,6 +8,4 @@ $client->setAccessType('offline');
 $client->setAuthConfig(__DIR__ . '/credentials.json');
 $service = new Google_Service_Sheets($client);
 $spreadsheetId = "1E2q3EC2gWZ6sUydb3oowXjZQ4_eAQJ98Z1LDvkeEXBQ";
-
-
 ?>

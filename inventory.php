@@ -3,16 +3,12 @@
 <?php include "head.php";
       include "sheets.php";
 ?>
-
 </head>
 <body>
 <div class="navbar">
-<h4 style="color:white;">Nav</h4>
-
-
+<h4 style="color:white;">Gemotech Inc.</h4>
 <!--<input type="text" name="search" id="search">
 <input type="submit" name="search" value="search" class="btn btn-primary"> -->
-
 </div>
 
 <?php 
@@ -70,7 +66,6 @@ if(empty($values)) {
         <td>" . $res9  . "</td>
         </tr>";
         }
-        
     }
 ?>
 
@@ -117,6 +112,7 @@ if(empty($values)) {
 </div>
 </table>
 </body>
+</html>
 
 
 
