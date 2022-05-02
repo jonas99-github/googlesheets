@@ -42,23 +42,6 @@ if(empty($values)) {
     print "No data found .\n";
 } else {
     //$mask = "%10s %-10s %s";
-<<<<<<< HEAD
-    //$i = 0;
-    /*
-    while($i<count($values)){
-        echo "
-        <tr style='text-align:center;'>
-        <td><button class='btn btn-primary'>Update</button><button class='btn btn-danger'>Delete</button></td>
-        <td>" . $values[$i] ?? 'default' . "</td>
-       $i++;
-        </tr>";
-        }
-<<<<<<< HEAD
-}
-=======
-    }
-    */
-    
     foreach ($values as $col){
       $res0=$col[0] ?? "";
       $res1=$col[1] ?? "";
@@ -70,20 +53,6 @@ if(empty($values)) {
       $res7=$col[7] ?? "";
       $res8=$col[8] ?? "";
       $res9=$col[9] ?? "";
-=======
-
-    foreach ($values as $col){
-$res0=$col[0] ?? "";
-$res1=$col[1] ?? "";
-$res2=$col[2] ?? "";
-$res3=$col[3] ?? "";
-$res4=$col[4] ?? "";
-$res5=$col[5] ?? "";
-$res6=$col[6] ?? "";
-$res7=$col[7] ?? "";
-$res8=$col[8] ?? "";
-$res9=$col[9] ?? "";
->>>>>>> ff76468b5a8680ab67fc89827a2d46665f3fdd0f
 
         echo "<tr style='text-align:center;'>
         <td><button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#staticBackdrop'>Update</button>
