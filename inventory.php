@@ -67,11 +67,8 @@ if(empty($values)) {
         </tr>";
         }
     }
-<<<<<<< HEAD
-    ?>
-=======
+
 ?>
->>>>>>> 8f2c68c3cf0d036592aaaf45e201e37c1341015e
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
